@@ -1,10 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My GitHub Page</title>
+  <title>ON THE ROLE OF MODEL ROBUSTNESS IN CLIP-BASED GENERATION</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+    h2 {
+      margin-top: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    .image-placeholder {
+      width: 150px;
+      height: 150px;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      color: #777;
+      margin: auto;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my first GitHub Page.</p>
+
+  <h1>ON THE ROLE OF MODEL ROBUSTNESS IN CLIP-BASED GENERATION</h1>
+  <p><strong>Authors:</strong> Mika Yagoda, Raja Giryes</p>
+
+  <h2>Generated images for different prompts across CLIP models, with crops and augmentations.</h2>
+  <p>Below are additional results not included in the paper.</p>
+
+  <table>
+    <tr>
+      <th>Prompt</th>
+      <th>ViT-B/16</th>
+      <th>ViT-B/32</th>
+      <th>TeCoA</th>
+      <th>Interpretabiliy</th>
+    </tr>
+
+    <tr>
+      <td>A high quality image of a bear</td>
+      <td><div class="image-placeholder">image path 1-1</div></td>
+      <td><div class="image-placeholder">image path 1-2</div></td>
+      <td><div class="image-placeholder">image path 1-3</div></td>
+      <td><div class="image-placeholder">image path 1-4</div></td>
+    </tr>
+
+    <tr>
+      <td>A high quality image of a golden retriever</td>
+      <td><div class="image-placeholder">image path 2-1</div></td>
+      <td><div class="image-placeholder">image path 2-2</div></td>
+      <td><div class="image-placeholder">image path 2-3</div></td>
+      <td><div class="image-placeholder">image path 2-4</div></td>
+    </tr>
+
+    <tr>
+      <td>A high quality image of a goldfish</td>
+      <td><div class="image-placeholder">image path 3-1</div></td>
+      <td><div class="image-placeholder">image path 3-2</div></td>
+      <td><div class="image-placeholder">image path 3-3</div></td>
+      <td><div class="image-placeholder">image path 3-4</div></td>
+    </tr>
+  </table>
+
+  <p>You can replace each placeholder with an actual image by changing:
+    <code>&lt;div class="image-placeholder"&gt;image path X-Y&lt;/div&gt;</code><br>
+    to
+    <code>&lt;img src="path/to/your/image.jpg" width="150" /&gt;</code>
+  </p>
+
 </body>
 </html>
