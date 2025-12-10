@@ -41,41 +41,114 @@
 
   <h1>ON THE ROLE OF MODEL ROBUSTNESS IN CLIP-BASED GENERATION</h1>
   <p><strong>Authors:</strong> Mika Yagoda, Raja Giryes</p>
-  <p>Below are additional results not included in the paper.</p>
-  <h2>Generated images for different prompts across CLIP models, with crops and augmentations.</h2>
-  
+
+  <h2>Generated images for different prompts across CLIP models</h2>
+  <p>Below are additional results not included in the paper. Images should be placed in the appropriate image paths inside the table.</p>
 
   <table>
     <tr>
       <th>Prompt</th>
-      <th>ViT-B/16</th>
-      <th>ViT-B/32</th>
+      <th>CLIP Model 1</th>
+      <th>CLIP Model 2</th>
+      <th>CLIP Model 3</th>
+      <th>CLIP Model 4</th>
+    </tr>
+
+    <tr>
+      <td>Prompt 1 text here</td>
+      <td><div class="image-placeholder">image path 1-1</div></td>
+      <td><div class="image-placeholder">image path 1-2</div></td>
+      <td><div class="image-placeholder">image path 1-3</div></td>
+      <td><div class="image-placeholder">image path 1-4</div></td>
+    </tr>
+
+    <tr>
+      <td>Prompt 2 text here</td>
+      <td><div class="image-placeholder">image path 2-1</div></td>
+      <td><div class="image-placeholder">image path 2-2</div></td>
+      <td><div class="image-placeholder">image path 2-3</div></td>
+      <td><div class="image-placeholder">image path 2-4</div></td>
+    </tr>
+
+    <tr>
+      <td>Prompt 3 text here</td>
+      <td><div class="image-placeholder">image path 3-1</div></td>
+      <td><div class="image-placeholder">image path 3-2</div></td>
+      <td><div class="image-placeholder">image path 3-3</div></td>
+      <td><div class="image-placeholder">image path 3-4</div></td>
+    </tr>
+  </table>
+
+  <p>You can replace each placeholder with an actual image by changing:
+    <code>&lt;div class="image-placeholder"&gt;image path X-Y&lt;/div&gt;</code><br>
+    to
+    <code>&lt;img src="path/to/your/image.jpg" width="150" /&gt;</code>
+  </p>
+
+  <h2>Gradual generation combining two robust models: TeCoA and Interpretability</h2>
+  <p>Prompt: "A high quality image of a goldfish"</p>
+
+  <table>
+    <tr>
+      <th>Step</th>
       <th>TeCoA</th>
-      <th>Interpretabiliy</th>
+      <th>Interpretability</th>
     </tr>
 
     <tr>
-      <td>A high quality image of a bear</td>
-      <td><img src="images/bear_16.png" width="150"></td>
-      <td><img src="images/bear_32.png" width="150"></td>
-      <td><img src="images/bear_tecoa.png" width="150"></td>
-      <td><img src="images/bear_inter.png" width="150"></td>
+      <td>Step 1</td>
+      <td><img src="images/goldfish_tecoa_step1.png" width="150"></td>
+      <td><img src="images/goldfish_inter_step1.png" width="150"></td>
     </tr>
 
     <tr>
-      <td>A high quality image of a golden retriever</td>
-      <td><img src="images/golder_16.png" width="150"></td>
-      <td><img src="images/golden_32.png" width="150"></td>
-      <td><img src="images/golden_tecoa.png" width="150"></td>
-      <td><img src="images/golder_inter.png" width="150"></td>
+      <td>Step 2</td>
+      <td><img src="images/goldfish_tecoa_step2.png" width="150"></td>
+      <td><img src="images/goldfish_inter_step2.png" width="150"></td>
     </tr>
 
     <tr>
-      <td>A high quality image of a goldfish</td>
-      <td><img src="images/fish_16.png" width="150"></td>
-      <td><img src="images/fish_32.png" width="150"></td>
-      <td><img src="images/fish_tecoa.png" width="150"></td>
-      <td><img src="images/fish_inter.png" width="150"></td>
+      <td>Step 3</td>
+      <td><img src="images/goldfish_tecoa_step3.png" width="150"></td>
+      <td><img src="images/goldfish_inter_step3.png" width="150"></td>
+    </tr>
+  </table>
+
+  <h2>Gradual generation combining two robust models: TeCoA and Interpretability</h2>
+  <p>Prompt: "A high quality image of a goldfish"</p>
+
+  <table>
+    <tr>
+      <th>STD \ Steps</th>
+      <th>2</th>
+      <th>3</th>
+      <th>5</th>
+      <th>7</th>
+      <th>10</th>
+      <th>25</th>
+      <th>100</th>
+    </tr>
+
+    <tr>
+      <td>0.1</td>
+      <td><img src="images/grad_fish_01_2.png" width="150"></td>
+      <td><img src="images/grad_fish_01_3.png" width="150"></td>
+      <td><img src="images/grad_fish_01_5.png" width="150"></td>
+      <td><img src="images/grad_fish_01_7.png" width="150"></td>
+      <td><img src="images/grad_fish_01_10.png" width="150"></td>
+      <td><img src="images/grad_fish_01_25.png" width="150"></td>
+      <td><img src="images/grad_fish_01_100.png" width="150"></td>
+    </tr>
+
+    <tr>
+      <td>0.3</td>
+      <td><img src="images/grad_fish_03_2.png" width="150"></td>
+      <td><img src="images/grad_fish_03_3.png" width="150"></td>
+      <td><img src="images/grad_fish_03_5.png" width="150"></td>
+      <td><img src="images/grad_fish_03_7.png" width="150"></td>
+      <td><img src="images/grad_fish_03_10.png" width="150"></td>
+      <td><img src="images/grad_fish_03_25.png" width="150"></td>
+      <td><img src="images/grad_fish_03_100.png" width="150"></td>
     </tr>
   </table>
 
